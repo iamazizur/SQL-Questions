@@ -8,5 +8,14 @@ Ans  ->    SELECT COUNT(*) FROM EmployeeInfo WHERE Department = 'HR';
 Q3  ->  Write a query to get the current date.
 ANS  ->  SELECT GETDATE()
 
-SUBSTRING ( expression, start, length )
+        || SUBSTRING ( expression, start, length ) SQL consider 1-BASED INDEXING ||
+Q4  ->  Write a query to retrieve the first four characters of  EmpLname from the EmployeeInfo table.
+ANS  ->  SELECT SUBSTRING(EmpLname, 1, 4) FROM EmployeeInfo;
+
+
+Q5  ->  Write a query to fetch only the place name(string before brackets) from the Address column of EmployeeInfo table.
+ANS  ->  SELECT SUBSTRING(Address, 1, CHARINDEX('(',Address)) FROM EmployeeInfo;
+
+
+
 
