@@ -4,3 +4,8 @@ Ans -> SELECT UPPER(EmpFname) AS 'EmpName' FROM EmployeeInfo;
 
 Q2  ->  Write a query to fetch the number of employees working in the department ‘HR’.
 Ans  ->    SELECT COUNT(*) FROM EmployeeInfo WHERE Department = 'HR';
+
+Q3  ->  Write a query to get the current date.
+ANS  ->  SELECT GETDATE()
+
+
