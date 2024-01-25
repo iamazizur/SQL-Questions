@@ -8,4 +8,5 @@ Ans  ->    SELECT COUNT(*) FROM EmployeeInfo WHERE Department = 'HR';
 Q3  ->  Write a query to get the current date.
 ANS  ->  SELECT GETDATE()
 
+SUBSTRING ( expression, start, length )
 
