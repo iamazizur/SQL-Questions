@@ -76,6 +76,15 @@ SELECT
 
 
 
+<ul> <li> <h4>   Write a query to fetch details of employees whose EmpLname ends with an alphabet ‘A’ and contains five alphabets.    </h4> </li> </ul>
+<code>
+	SELECT first_name,LEN(first_name) 
+	FROM patients 
+	WHERE first_name LIKE '____A';
+</code>
+
+
+
 
 
 
