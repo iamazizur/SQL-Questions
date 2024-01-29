@@ -96,6 +96,31 @@ SELECT
 
 
 
+<b>We can not use Aggregate functions on 'WHERE' cluase</b>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
