@@ -64,7 +64,15 @@ SELECT
 
 
 
-
+<ul><li><h4>     Write a query to fetch all the records from the EmployeeInfo table ordered by EmpLname in descending order and Department in the ascending order.           </h4></li></ul>
+<code>
+	SELECT 
+	first_name
+    	,last_name
+    	,city
+	FROM patients
+	ORDER BY first_name DESC, city ASC 
+</code>
 
 
 
