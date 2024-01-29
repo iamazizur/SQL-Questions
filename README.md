@@ -23,8 +23,8 @@
   </code>
 </h5>
 
+<ul><li><h4>Write a query to find the names of employees that begin with ‘S’</h4> </li></ul>
 
-<h4>Write a query to find the names of employees that begin with ‘S’</h4>
   <code>
     SELECT 
 	    first_name
