@@ -1,0 +1,14 @@
+<h3>Write a query to create a new table which consists of data and structure copied from the other table.</h3>
+<h5>
+  <code>
+    SELECT * INTO new_table FROM current_table
+  </code>
+</h5>
+
+
+<h3>Write q query to find all the employees whose salary is between 50000 to 100000</h3>
+<h5>
+  <code>
+    SELECT * INTO new_table FROM current_table
+  </code>
+</h5>
