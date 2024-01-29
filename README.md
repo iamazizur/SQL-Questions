@@ -95,8 +95,30 @@ SELECT
 </code>
 
 
-
+</br>
+</br>
 <b>We can not use Aggregate functions on 'WHERE' cluase</b>
+</br>
+</br>
+
+
+<ul> <li> <h4>TOTAL NUMBER OF THE USERS WHICH WILL BE BASED ON THE CITY
+NOW WE REQUIRE THOSE CITIES WHICH HAVING MORE THAN 100 first_name</h4> </li> </ul>
+
+<code>
+	SELECT *
+	FROM 
+		(
+			SELECT 
+    				city
+    				,COUNT(first_name) as CNT
+			FROM patients 
+			GROUP BY city
+			ORDER BY COUNT(first_name)
+  		) TAB2
+  	WHERE
+  		TAB2.CNT > 100
+</code>
 
 
 
