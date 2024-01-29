@@ -141,6 +141,25 @@ NOW WE REQUIRE THOSE CITIES WHICH HAVING MORE THAN 100 first_name</h4>
 	
 </li>
 
+
+<li>
+	<h4>NOW WE REQUIRE THE COMPLETE INFORMATIONS OF THAT CITY</h4>
+	<i>USING JOINS</i>
+	<code>
+		SELECT *
+		FROM (
+    			SELECT
+      				COUNT(first_name) as CNT
+  				,city
+    			FROM patients
+    			GROUP BY city
+    			ORDER BY COUNT(first_name)
+  		) TAB2
+  		LEFT JOIN patients ON patients.city = TAB2.city
+		WHERE TAB2.CNT > 100 AND TAB2.city LIKE 'A%'
+	</code>
+</li>
+
 </ol>
 
 
