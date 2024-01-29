@@ -22,3 +22,13 @@
     GROUP BY height
   </code>
 </h5>
+
+
+<h4>Write a query to find the names of employees that begin with ‘S’</h4>
+  <code>
+    SELECT 
+	    first_name
+	    ,last_name
+    FROM patients
+    WHERE first_name like 's%'
+  </code>
