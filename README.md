@@ -102,7 +102,7 @@ SELECT
 </br>
 
 
-<ul> <li> <h4>TOTAL NUMBER OF THE USERS WHICH WILL BE BASED ON THE CITY
+<ol> <li> <h4>TOTAL NUMBER OF THE USERS WHICH WILL BE BASED ON THE CITY
 NOW WE REQUIRE THOSE CITIES WHICH HAVING MORE THAN 100 first_name</h4> 
 
 <code>
@@ -121,8 +121,27 @@ NOW WE REQUIRE THOSE CITIES WHICH HAVING MORE THAN 100 first_name</h4>
 </code>
 
 </li> 
+<li>
+<h4>WE REQUIRED THOSE CITY WHICH HAS BEEN STARTED WITH 'A'</h4>
+<code>
+	SELECT *
+	FROM 
+		(
+			SELECT 
+    				city
+    				,COUNT(first_name) as CNT
+			FROM patients 
+			GROUP BY city
+			ORDER BY COUNT(first_name)
+  		) TAB2
+  	WHERE
+  		TAB2.CNT > 100 AND TAB2.city LIKE 'A%'
+</code>
 
-</ul>
+	
+</li>
+
+</ol>
 
 
 
