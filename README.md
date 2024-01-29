@@ -39,4 +39,12 @@
 	SELECT TOP N * FROM my_table;
 </code>
 
+
+<ul><li><h4> Write a query to fetch top N records.   </h4> </li></ul>
+CONCAT ( argument1 , argument2 [ , argumentN ] ... ) here [ , argumentN] means params string[]
+<code>
+	SELECT 
+	CONCAT(first_name,' ',last_name) AS 'FULL NAME'
+	FROM patients
+</code>
   
