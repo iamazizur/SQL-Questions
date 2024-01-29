@@ -27,8 +27,16 @@
 
   <code>
     SELECT 
-	    first_name
-	    ,last_name
+    	first_name
+	,last_name
     FROM patients
     WHERE first_name like 's%'
   </code>
+
+
+<ul><li><h4>Write a query to fetch top N records.</h4> </li></ul>
+<code>
+	SELECT TOP N * FROM my_table;
+</code>
+
+  
