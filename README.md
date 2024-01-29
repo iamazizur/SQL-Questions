@@ -47,4 +47,39 @@ CONCAT ( argument1 , argument2 [ , argumentN ] ... ) here [ , argumentN] means p
 	CONCAT(first_name,' ',last_name) AS 'FULL NAME'
 	FROM patients
 </code>
+
+
+
+<ul><li><h4>   Write a query find number of employees whose DOB is between 02/05/1970 to 31/12/1975 and are grouped according to gender    </h4></li></ul>
+<code>
+SELECT
+	COUNT(gender)
+ 	,gender
+  	FROM patients
+   	WHERE birth_date between '02/05/1970' AND '31/12/1975'
+	
+</code>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
