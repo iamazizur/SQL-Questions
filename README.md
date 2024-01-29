@@ -158,7 +158,30 @@ NOW WE REQUIRE THOSE CITIES WHICH HAVING MORE THAN 100 first_name</h4>
   		LEFT JOIN patients ON patients.city = TAB2.city
 		WHERE TAB2.CNT > 100 AND TAB2.city LIKE 'A%'
 	</code>
+
+ 	<i>WITHOUT JOINS</i>
+  	<code>
+   		SELECT * 
+		FROM patients
+		WHERE city IN
+			(
+			SELECT TAB2.city
+			FROM (
+    				SELECT
+      				COUNT(first_name) as CNT
+  				,city
+    				FROM patients
+    				GROUP BY city
+    				ORDER BY COUNT(first_name)
+  			) TAB2
+			WHERE TAB2.CNT > 100 AND TAB2.city LIKE 'A%'
+			) 
+   	</code>
+  	
 </li>
+
+
+
 
 </ol>
 
