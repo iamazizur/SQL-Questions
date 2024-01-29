@@ -11,4 +11,14 @@
   <code>
    SELECT * FROM EmployeePosition WHERE Salary BETWEEN '50000' AND '100000';
   </code>
+
+  <code>
+    SELECT
+      first_name,
+      height,
+      COUNT(height)
+    FROM patients
+    WHERE height >= 145 AND height <= 300
+    GROUP BY height
+  </code>
 </h5>
