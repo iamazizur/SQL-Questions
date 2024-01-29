@@ -87,7 +87,12 @@ SELECT
 
 
 
-
+<ul><li><h4>  Write a query to fetch details of all employees excluding the employees with first names, “Sanjay” and “Sonia” from the EmployeeInfo table.  </h4></li></ul>
+<code>
+	SELECT *
+	FROM EmployeeInfo
+	WHERE first_name NOT IN ('SANJAY','SONIA')
+</code>
 
 
 
