@@ -1,0 +1,8 @@
+
+Q1 :   How to find Nth highest salary from a table
+Ans:  SELECT * FROM Employee WHERE salary = 
+         (
+            SELECT MIN(salary) FROM Employee 
+            WHERE  salary IN ( SELECT DISTINCT TOP 3 salary FROM Employee  ORDER BY salary DESC
+				)
+	    	)
