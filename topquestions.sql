@@ -1,0 +1,1 @@
+-- SELECT Nth Highest Salary
